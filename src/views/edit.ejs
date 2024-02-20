@@ -21,7 +21,7 @@
             </div>
         </div>
         <div data-role="content">
-            <form action="/api/products/<%= product.barcode %>" method="post">
+            <form action="//<%= product.barcode %>" method="post">
                 <div data-role="fieldcontain">
                     <label>Codigo de barras:</label>
                     <input type="text" name="barcode" id="txt_barcode" value="<%= product.barcode %>">

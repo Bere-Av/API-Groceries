@@ -28,8 +28,8 @@ app.use(express.urlencoded({ extended: false }));
 // Middleware para registrar las solicitudes HTTP en la consola en modo de desarrollo
 app.use(morgan('dev'));
 
-// Middleware que maneja todas las solicitudes dirigidas a '/api/products' utilizando el enrutador de productos
-app.use('/api/products', productsRouter);
+// Middleware que maneja todas las solicitudes dirigidas a '/' utilizando el enrutador de productos
+app.use('/', productsRouter);
 
 // Exporta la aplicación Express para su uso en otros archivos
 export default app;
